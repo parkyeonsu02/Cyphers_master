@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cyphers Master</title>
+<style>
+	.aside{width: 20%; height: 100%; float: right; background-color: black;}
+	.footer{width: 100%; height: 30%; clear: both; background-color: black;}
+	.section{width: 70%; height: 100%; float: center;}
+	  div { text-align: center;}
+	  body{margin: 0; padding: 0; height: 100%; background-color: #ffffff;}
+	  a{text-decoration: none;}
+	  .slideDownReturn{  }
+	 .header{width: 100%; height: 100%; clear: top; background-color: black;}
+	 .scale-up-hor-center {
+	-webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+}
+}
+.blink-1 {
+	-webkit-animation: blink-1 0.6s both;
+	        animation: blink-1 0.6s both;
+}
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.container {
+  margin: 20px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.list .up-on-scroll {
+  margin-top: 20px;
+  transition: transform 0.7s, opacity 1s;
+}
+.video-wrap {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-height: 600px;
+}
+.video-wrap .video {
+  object-fit: contain;
+  max-width: 740px;
+  width: 100%;
+}
+.scale {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.scale:hover {
+  transform: scale(1.5);
+}
+.img {width:325px; height:80px; overflow:hidden }
+table{
+	border-collapse: collapse;
+}
+td {text-align: center; padding: 5px; height: 15px; width: 100px;}
+
+tbody tr:nth-child(even){ background-color: #EFF5FB; }
+tbody td:hover{background: #ECCEF5;}
+
+</style>
+</head>
+<body class="scale-up-hor-center" onload="loop()">
+<header class="header">
+	
+	<p id="current"></p>
+	<audio id="player" controls="" autoplay muted>사이퍼즈 5주년 믹싱곡</audio>
+
+<div class="blink-1">
+<a href="cyphersmaster.html">	<img src="로고.png" width="740" height="450" title="Cyphers Master"></a><br>
+</div>
+<div class="img">
+<a href="탱커/탱커.html"><img src="탱커.png" width="70" height="70" title="탱커" class="scale"></a>
+<a href="근딜/근딜.html"><img src="근딜.png" width="70" height="70" title="근거리 딜러" class="scale"></a>
+<a href="원딜/원딜.html"><img src="원딜.png" width="70" height="70" title="원거리 딜러" class="scale"></a>
+<a href="서포터/서포터.html" ><img src="서포터.png" width="70" height="70" title="서포터" class="scale"></a>
+</div>
+<div class="blink-1" style="color: #ffffff; font-size: 20px;">아래로 스크롤 하세요.</div>
+<br>
+<br>
+<br>
+<br>
+</header>
+<div class="container">
+      <div class="list">
+<article class="up-on-scroll">
+<div class="video-wrap">
+<div align="center">
+	<video src="이클립스.mp4" width="740" height="600" controls autoplay>선구자 케니스 이클립스 영상</video><br>
+</div>
+</div>
+</article>
+<hr>
+<div>
+        <article class="up-on-scroll">
+	<span style="text-align: center;">
+	<caption><h3>캐릭터</h3></caption>
+	<table border="1" style="margin-left: auto; margin-right: auto;">
+		<tbody>
+		<tr style="margin-bottom: 50px;">
+			<td><a href="근딜/루이스/루이스.html">루이스</a></td>
+			<td><a href="탱커/휴톤/휴톤.html">휴톤</a></td>
+			<td><a href="원딜/타라/타라.html">타라</a></td>
+			<td><a href="근딜/로라스/로라스.html">로라스</a></td>
+			<td><a href="원딜/트리비아/트리비아.html">트리비아</a></td>
+			<td><a href="원딜/카인/카인.html">카인</a></td>
+			<td><a href="근딜/레나/레나.html">레나</a></td>
+			<td><a href="원딜/드렉슬러/드렉슬러.html">드렉슬러</a></td>
+			<td><a href="탱커/도일/도일.html">도일</a></td>
+			<td><a href="서포터/토마스/토마스.html">토마스</a></td>
+			<td><a href="원딜/나비/나비.html">나이오비</a></td>
+			<td><a href="근딜/시바/시바.html">시바 포</a></td>
+			<td><a href="서포터/웨슬리/웨슬리.html">웨슬리</a></td>
+		</tr>
+		<tr>
+			<td><a href="탱커/스텔라/스텔라.html">스텔라</a></td>
+			<td><a href="서포터/앨리셔/앨리셔.html">앨리셔</a></td>
+			<td><a href="원딜/클레어/클레어.html">클레어</a></td>
+			<td><a href="근딜/다이무스/다이무스.html">다이무스</a></td>
+			<td><a href="근딜/이글/이글.html">이글</a></td>
+			<td><a href="원딜/마를렌/마를렌.html">마를렌</a></td>
+			<td><a href="서포터/샬럿/샬럿.html">샬럿</a></td>
+			<td><a href="원딜/윌라드/윌라드.html">윌라드</a></td>
+			<td><a href="탱커/레이튼/레이튼.html">레이튼</a></td>
+			<td><a href="원딜/미쉘/미쉘.html">미쉘</a></td>
+			<td><a href="탱커/린/린.html">린</a></td>
+			<td><a href="원딜/빅터/빅터.html">빅터</a></td>
+			<td><a href="근딜/카를로스/카를로스.html">카를로스</a></td>
+		</tr>
+		<tr>
+			<td><a href="근딜/호타루/호타루.html">호타루</a></td>
+			<td><a href="근딜/트릭시/트릭시.html">트릭시</a></td>
+			<td>종료</td>
+			<td><a href="서포터/까미유/까미유.html">까미유</a></td>
+			<td><a href="근딜/자네트/자네트.html">자네트</a></td>
+			<td><a href="원딜/피터/피터.html">피터</a></td>
+			<td><a href="탱커/아이작/아이작.html">아이작</a></td>
+			<td><a href="탱커/레베카/레베카.html">레베카</a></td>
+			<td><a href="원딜/엘리/엘리.html">엘리</a></td>
+			<td><a href="서포터/마틴/마틴.html">마틴</a></td>
+			<td><a href="탱커/브루스/브루스.html">브루스</a></td>
+			<td><a href="원딜/미아/미아.html">미아</a></td>
+			<td><a href="원딜/드니스/드니스.html">드니스</a></td>
+		</tr>
+		<tr>
+			<td><a href="근딜/제레온/제레온.html">제레온</a></td>
+			<td><a href="원딜/루시/루시.html">루시</a></td>
+			<td><a href="탱커/티엔/티엔.html">티엔</a></td>
+			<td><a href="원딜/하랑/하랑.html">하랑</a></td>
+			<td><a href="근딜/제이/제이.html">J</a></td>
+			<td><a href="탱커/벨져/벨져.html">벨져</a></td>
+			<td>(종료)</td>
+			<td><a href="탱커/리첼/리첼.html">리첼</a></td>
+			<td><a href="서포터/리사/리사.html">리사</a></td>
+			<td><a href="서포터/릭/릭.html">릭</a></td>
+			<td><a href="탱커/제키엘/제키엘.html">제키엘</a></td>
+			<td><a href="원딜/탄야/탄야.html">탄야</a></td>
+			<td><a href="서포터/캐럴/캐럴.html">캐럴</a></td>
+		</tr>
+		<tr>
+			<td><a href="근딜/라이샌더/라이샌더.html">라이샌더</a></td>
+			<td><a href="근딜/루드빅/루드빅.html">루드빅</a></td>
+			<td><a href="원딜/멜빈/멜빈.html">멜빈</a></td>
+			<td><a href="탱커/디아나/디아나.html">디아나</a></td>
+			<td><a href="근딜/클리브/클리브.html">클리브</a></td>
+			<td><a href="원딜/헬레나/헬레나.html">헬레나</a></td>
+			<td><a href="탱커/에바/에바.html">에바</a></td>
+			<td><a href="원딜/론/론.html">론</a></td>
+			<td><a href="탱커/레오/레오.html">레오노르</a></td>
+			<td><a href="서포터/시드니/시드니.html">시드니</a></td>
+			<td><a href="근딜/테이/테이.html">테이</a></td>
+			<td><a href="탱커/티모시/티모시.html">티모시</a></td>
+			<td><a href="원딜/엘프/엘프리데.html">엘프리데</a></td>
+		</tr>
+		<tr>
+			<td><a href="서포터/티샤/티샤.html">티샤</a></td>
+			<td><a href="근딜/카로슈/카로슈.html">카로슈</a></td>
+			<td><a href="탱커/라이언/라이언.html">라이언</a></td>
+			<td><a href="원딜/파수꾼a/파수꾼.html">파수꾼A</a></td>
+			<td><a href="서포터/에밀리/에밀리.html">에밀리</a></td>
+			<td><a href="탱커/플로/플로리안.html">플로리안</a></td>
+			<td><a href="근딜/케니스/케니스.html">케니스</a></td>
+			<td>?</td>
+			<td>?</td>
+			<td>?</td>
+			<td>?</td>
+			<td>?</td>
+			<td>?</td>
+		</tr>
+	</tbody>
+	</table>
+</span>
+</article>
+</div>
+<br>
+<footer class="footer" style="text-align: center;">
+	<a href="http://cyphers.nexon.com/cyphers/main">사이퍼즈 공식 홈페이지</a>
+</footer>
+</div>
+</div>
+<script>
+function isElementUnderBottom(elem, triggerDiff) {
+  const { top } = elem.getBoundingClientRect();
+  const { innerHeight } = window;
+  return top > innerHeight + (triggerDiff || 0);
+}
+
+function handleScroll() {
+  const elems = document.querySelectorAll('.up-on-scroll');
+  elems.forEach(elem => {
+    if (isElementUnderBottom(elem, -20)) {
+      elem.style.opacity = "0";
+      elem.style.transform = 'translateY(70px)';
+    } else {
+      elem.style.opacity = "1";
+      elem.style.transform = 'translateY(0px)';
+    }
+  })
+}
+
+window.addEventListener('scroll', handleScroll);
+
+let player;
+
+// 오디오 파일 리스트
+const audioFiles = [
+  'music.mp3',
+  '멜빈.mp3',
+  '라이샌더.mp3',
+  '에밀리.mp3',
+  '클리브.mp3',
+  '하랑.mp3'
+];
+// 방문할 때마다 순서 다르게
+function shuffle(a) {
+  let j;
+  let x;
+  let i;
+  for (i = a.length; i; i -= 1) {
+    j = Math.floor(Math.random() * i);
+    x = a[i - 1];
+    a[i - 1] = a[j];
+    a[j] = x;
+  }
+}
+
+
+
+function preloadAudio(url) {
+  const audio = new Audio();
+  audio.addEventListener('canplaythrough', loadedAudio, false);
+  audio.src = url;
+}
+
+let loaded = 0;
+function loadedAudio() {
+  loaded += 1;
+  if (loaded === audioFiles.length) {
+    // 전부 로드됐으면 플레이
+    init();
+  }
+}
+
+function play(index) {
+  player.src = audioFiles[index];
+  getSRC();
+  setTimeout(function() {
+    player.play();
+  }, 0);
+}
+
+let i = 0;
+function init() {
+  play(i);
+
+  player.onpause = function () {
+    // 커스텀 플레이 버튼 조작 (toPlay Icon)
+  };
+  player.onended = function () {
+    next();
+  };
+  
+  player.onplay = function () {
+    if (!player.seeking) {
+    // 커스텀 플레이 버튼 조작 (toPause Icon)
+    }
+  };
+}
+
+function next() {
+  i += 1;
+  if (i >= audioFiles.length) {
+    i = 0;
+  }
+  play(i);
+}
+
+function getSRC() {
+  switch (player.src) {
+    case 'https://raw.githubusercontent.com/or7i/or7i.github.io/master/music/forriver.mp3': //ex) ttt.com/music/1.mp3
+      playinginfo = lists[0]; // 제목1 - 아티스트1'
+      document.getElementById('current').innerHTML = playinginfo;
+      break;
+    case 'https://raw.githubusercontent.com/or7i/or7i.github.io/master/music/had.mp3':
+      playinginfo = lists[1];
+      document.getElementById('current').innerHTML = playinginfo;
+      break;
+    default:
+      playinginfo = '';
+      document.getElementById('current').innerHTML = playinginfo;
+      break;
+  }
+}
+
+// 아래 부분은 onload 부분에 추가
+// 오디오 목록 셔플
+function loop() {
+  shuffle(audioFiles);
+
+  // player 오디오 ex) <audio id="player" controls="" autoplay="">크롬 사용을 권장합니다.</audio>
+  player = document.getElementById('player');
+  for (let i in audioFiles) {
+    preloadAudio(audioFiles[i]);
+  }
+}
+// onload 끝
+</script>
+</body>
+</html>
