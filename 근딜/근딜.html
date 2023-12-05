@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cyphers master_근딜</title>
+	<style>
+	.nav{width: 15%; height: 100%; float: left;}
+	.section{width: 80%; height: 100%; float: right;}
+	.header{width: 100%; height: 100%; clear: top; background-color: black;}
+	  body{margin: 0; padding: 0; height: 100%;}
+	  
+	  a{text-decoration: none;}
+	  .p1{font-family: monospace; font-size: 30px}
+	  li{font-style: monospace; color: #black;}
+	  li:hover{background:#F6CECE;}
+
+.container {
+  margin: 20px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.list .up-on-scroll {
+  margin-top: 20px;
+  transition: transform 0.7s, opacity 1s;
+}
+.img-wrap {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-height: 600px;
+}
+.img-wrap .img {
+  object-fit: contain;
+  max-width: 740px;
+  width: 100%;
+}
+
+.hover_effect_box {
+    width: 230px;
+    height: 335px;
+    margin: 10px;
+    border: 10px solid #f3f3f3;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+    -moz-box-shadow: 1px 1px 2px #e6e6e6;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff;
+    box-sizing: initial;
+ }
+ .hover_effect_box * {
+    box-sizing: initial;
+ }
+
+ .hover_effect_box .caption
+ , .hover_effect_box .mask  {
+    width: 230px;
+    height: 335px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+ }
+ .hover_effect_box .content_bg {
+    display: block;
+    position: relative;
+ }
+ .hover_effect_box .caption_title {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+ }
+ .hover_effect_box .caption_desc {
+    font-size: 25px;
+    line-height: 1.5;
+    position: relative;
+    color: #fff;
+    padding: 30px 20px 40px;
+    text-align: center;
+ }
+ .hover_effect_box .caption_link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 1px #000;
+    -moz-box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px #000;
+ }
+ .hover_effect_box .caption_link:hover {
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+ }
+
+.hover_effect_7 .content_bg {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+ }
+ .hover_effect_7 .caption {
+    background-color: rgba(246, 206, 206, 0.5);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ .hover_effect_7 .caption_title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    color: #333;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ .hover_effect_7 .caption_desc {
+    color: #333;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+ }
+ .hover_effect_7 .caption_link {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+ }
+ .hover_effect_7:hover .content_bg {
+    -webkit-transform: scale(10);
+    -moz-transform: scale(10);
+    -o-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ .hover_effect_7:hover .caption {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+ }
+.hover_effect_7:hover .caption_title,.hover_effect_7:hover .caption_desc,.hover_effect_7:hover .caption_link {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+ }
+ .div_box{
+  background: #610B0B;
+  width: 200;
+  padding: 20;
+ }
+ #round1{
+  border-radius: 0px 20px;
+ }
+
+	</style>
+</head>
+<body>
+<header class="header">
+<div style=" text-align: center;">
+<img src="../근딜1.png" width="180" height="170">	
+</div>
+<div class="div_box" id="round1">
+<p class="p1" style="text-align: center; color: #ffffff;"><b>근거리 딜러</b></p>
+</div>
+<br>
+<br>
+<br>
+</header>
+<section class="section">
+	<div class="container">
+	<div class="list">
+	<article class="up-on-scroll">
+	<div class="img-wrap">
+
+<div class="hover_effect_box hover_effect_7">
+<img src="로라스.png" width="230" height="335" id="로라스" margin >
+ <div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="로라스/로라스.html">검룡 로라스</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="루이스.png" width="230" height="335" id="루이스">
+ <div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="루이스/루이스.html">결정의 루이스</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="레나.jpg" width="230" height="335" id="레나">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="레나/레나.html">강각의 레나</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="시바.png" width="230" height="335" id="시바">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="시바/시바.html">시바 포</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="다무.png" width="230" height="335" id="다이무스">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="다이무스/다이무스.html">태도 다이무스</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="이글.png" width="230" height="335" id="이글">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="이글/이글.html">쾌검 이글</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="카를.png" width="230" height="335" id="카를로스">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="카를로스/카를로스.html">질풍 카를로스</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="호타루.png" width="230" height="335" id="호타루">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="호타루/호타루.html">둔갑의 호타루</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="트릭시.png" width="230" height="335" id="트릭시">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="트릭시/트릭시.html">냉혈의 트릭시</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="자네트.png" width="230" height="335" id="자네트">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="자네트/자네트.html">관통의 자네트</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="제레온.jpg" width="230" height="335" id="제레온">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="제레온/제레온.html">격검의 제레온</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="제이.jpg" width="230" height="335" id="J">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="제이/제이.html">거너 J</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="라샌.jpg" width="230" height="335" id="라이샌더">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="라이샌더/라이샌더.html">광대 라이샌더</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="루드빅.jpg" width="230" height="335" id="루드빅">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="루드빅/루드빅.html">환멸의 루드빅</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="클리브.png" width="230" height="335" id="클리브">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="클리브/클리브.html">기자 클리브</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="테이.png" width="230" height="335" id="테이">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="테이/테이.html">흑영의 테이</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="카로슈.png" width="230" height="335" id="카로슈">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="카로슈/카로슈.html">카로슈</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="케니스.png" width="230" height="335" id="케니스">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="케니스/케니스.html">선구자 케니스</a></h3>
+    </div>
+  </div>
+</div>
+<br>
+</div>
+</article>
+</div>
+</div>
+</section>
+<nav class="nav">
+	<ul>
+		<li><a href="#로라스">로라스</a></li>
+		<li><a href="#루이스">루이스</a></li>
+		<li><a href="#레나">레나</a></li>
+		<li><a href="#시바 포">시바 포</a></li>
+		<li><a href="#다이무스">다이무스</a></li>
+		<li><a href="#이글">이글</a></li>
+		<li><a href="#카를로스">카를로스</a></li>
+		<li><a href="#호타루">호타루</a></li>
+		<li><a href="#트릭시">트릭시</a></li>
+		<li><a href="#자네트">자네트</a></li>
+		<li><a href="#제레온">제레온</a></li>
+		<li><a href="#J">J</a></li>
+		<li><a href="#라이샌더">라이샌더</a></li>
+		<li><a href="#루드빅">루드빅</a></li>
+		<li><a href="#클리브">클리브</a></li>
+		<li><a href="#테이">테이</a></li>
+		<li><a href="#카로슈">카로슈</a></li>
+		<li><a href="#케니스">케니스</a></li>
+	</ul>
+</nav>
+
+<script>
+	
+function isElementUnderBottom(elem, triggerDiff) {
+  const { top } = elem.getBoundingClientRect();
+  const { innerHeight } = window;
+  return top > innerHeight + (triggerDiff || 0);
+}
+
+function handleScroll() {
+  const elems = document.querySelectorAll('.up-on-scroll');
+  elems.forEach(elem => {
+    if (isElementUnderBottom(elem, -20)) {
+      elem.style.opacity = "0";
+      elem.style.transform = 'translateY(70px)';
+    } else {
+      elem.style.opacity = "1";
+      elem.style.transform = 'translateY(0px)';
+    }
+  })
+}
+
+window.addEventListener('scroll', handleScroll);
+
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+
+</script>
+</body>
+</html>

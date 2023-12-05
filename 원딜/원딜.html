@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cyphers master_근딜</title>
+	<style>
+	.nav{width: 15%; height: 100%; float: left;}
+	.section{width: 80%; height: 100%; float: right;}
+	.header{width: 100%; height: 100%; clear: top; background-color: black;}
+	  body{margin: 0; padding: 0; height: 100%;}
+	  
+	  a{text-decoration: none;}
+	  .p1{font-family: monospace; font-size: 30px}
+	  li{font-style: monospace; color: #black;}
+	  li:hover{background:#E2A9F3;}
+
+.container {
+  margin: 20px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.list .up-on-scroll {
+  margin-top: 20px;
+  transition: transform 0.7s, opacity 1s;
+}
+.img-wrap {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  max-height: 600px;
+}
+.img-wrap .img {
+  object-fit: contain;
+  max-width: 740px;
+  width: 100%;
+}
+
+.hover_effect_box {
+    width: 230px;
+    height: 335px;
+    margin: 10px;
+    border: 10px solid #f3f3f3;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+    -moz-box-shadow: 1px 1px 2px #e6e6e6;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff;
+    box-sizing: initial;
+ }
+ .hover_effect_box * {
+    box-sizing: initial;
+ }
+
+ .hover_effect_box .caption
+ , .hover_effect_box .mask  {
+    width: 230px;
+    height: 335px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+ }
+ .hover_effect_box .content_bg {
+    display: block;
+    position: relative;
+ }
+ .hover_effect_box .caption_title {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+ }
+ .hover_effect_box .caption_desc {
+    font-size: 25px;
+    line-height: 1.5;
+    position: relative;
+    color: #fff;
+    padding: 30px 20px 40px;
+    text-align: center;
+ }
+ .hover_effect_box .caption_link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 1px #000;
+    -moz-box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px #000;
+ }
+ .hover_effect_box .caption_link:hover {
+    -webkit-box-shadow: 0 0 5px #000;
+    -moz-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+ }
+
+.hover_effect_7 .content_bg {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+ }
+ .hover_effect_7 .caption {
+    background-color: rgba(226, 169, 243, 0.5);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ .hover_effect_7 .caption_title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    color: #333;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ .hover_effect_7 .caption_desc {
+    color: #333;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+ }
+ .hover_effect_7 .caption_link {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+ }
+ .hover_effect_7:hover .content_bg {
+    -webkit-transform: scale(10);
+    -moz-transform: scale(10);
+    -o-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ .hover_effect_7:hover .caption {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+ }
+.hover_effect_7:hover .caption_title,.hover_effect_7:hover .caption_desc,.hover_effect_7:hover .caption_link {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+ }
+ .div_box{
+  background: #610B5E;
+  width: 200;
+  padding: 20;
+ }
+ #round1{
+  border-radius: 0px 20px;
+ }
+
+	</style>
+</head>
+<body>
+<header class="header">
+<div style=" text-align: center;">
+<img src="../원딜.png" width="180" height="170">	
+</div>
+<div class="div_box" id="round1">
+<p class="p1" style="text-align: center; color: #ffffff;"><b>원거리 딜러</b></p>
+</div>
+<br>
+<br>
+<br>
+</header>
+<section class="section">
+	<div class="container">
+	<div class="list">
+	<article class="up-on-scroll">
+	<div class="img-wrap">
+
+<div class="hover_effect_box hover_effect_7">
+<img src="타라.png" width="230" height="335" id="타라" margin >
+ <div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="타라/타라.html">불의 마녀<br>타라</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="틀비.png" width="230" height="335" id="트리비아">
+ <div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="트리비아/트리비아.html">밤의 여왕<br>트리비아</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="카인.jpg" width="230" height="335" id="카인">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="카인/카인.html">숙명의 카인</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="드렉.png" width="230" height="335" id="드렉">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="드렉슬러/드렉슬러.html">창룡 드렉슬러</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="나비.png" width="230" height="335" id="나이오비">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="나비/나비.html">재앙의<br>나이오비</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="클레어.png" width="230" height="335" id="클레어">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="클레어/클레어.html">쫒는 빛의<br>클레어</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="마를렌.png" width="230" height="335" id="마를렌">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="마를렌/마를렌.html">소공녀 마를렌</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="윌라드.png" width="230" height="335" id="윌라드">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="윌라드/윌라드.html">전격의 윌라드</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+      <img src="미쉘.png" width="230" height="335" id="미쉘">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="미쉘/미쉘.html">기적의 미쉘</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="빅터.png" width="230" height="335" id="빅터">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="빅터/빅터.html">삭풍의 빅터</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="피터.png" width="230" height="335" id="피터">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="피터/피터.html">경이의 피터</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="엘리.jpg" width="230" height="335" id="엘리">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="엘리/엘리.html">축포의 엘리</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="미아.jpg" width="230" height="335" id="미아">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="미아/미아.html">드루이드 미아</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="드니스.jpg" width="230" height="335" id="드니스">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="드니스/드니스.html">엘윈의 드니스</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+	<div class="img-wrap">
+		<div class="hover_effect_box hover_effect_7">
+<img src="루시.jpg" width="230" height="335" id="루시">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="루시/루시.html">선무의 루시</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="하랑.jpg" width="230" height="335" id="하랑">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="하랑/하랑.html">신령의 하랑</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+  <div class="img-wrap">
+    <div class="hover_effect_box hover_effect_7">
+<img src="탄야.jpg" width="230" height="335" id="탄야">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="탄야/탄야.html">헌터 탄야</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="멜빈.png" width="230" height="335" id="멜빈">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="멜빈/멜빈.html">공학도 멜빈</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+  <div class="img-wrap">
+    <div class="hover_effect_box hover_effect_7">
+<img src="헬레나.png" width="230" height="335" id="헬레나">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="헬레나/헬레나.html">증폭의 헬레나</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="론.png" width="230" height="335" id="론">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="론/론.html">설계자 론</a></h3>
+    </div>
+  </div>
+</div>
+</div>
+</article>
+<br>
+<article class="up-on-scroll">
+  <div class="img-wrap">
+    <div class="hover_effect_box hover_effect_7">
+<img src="엘프.png" width="230" height="335" id="엘프리데">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="엘프/엘프리데.html">집행자<br>엘프리데</a></h3>
+    </div>
+  </div>
+</div>
+<div class="hover_effect_box hover_effect_7">
+<img src="파수꾼.png" width="230" height="335" id="파수꾼a">
+<div class="content_bg">
+  </div>
+  <div class="caption">
+    <div class="caption_desc">
+      <h3><a href="파수꾼a/파수꾼.html">파수꾼 A</a></h3>
+    </div>
+  </div>
+</div>
+<br>
+</div>
+</article>
+</div>
+</div>
+</section>
+<nav class="nav">
+	<ul>
+		<li><a href="#타라">타라</a></li>
+		<li><a href="#트리비아">트리비아</a></li>
+    <li><a href="#카인">카인</a></li>
+		<li><a href="#드렉슬러">드렉슬러</a></li>
+		<li><a href="#나이오비">나이오비</a></li>
+		<li><a href="#클레어">클레어</a></li>
+		<li><a href="#마를렌">마를렌</a></li>
+		<li><a href="#윌라드">윌라드</a></li>
+		<li><a href="#미쉘">미쉘</a></li>
+		<li><a href="#빅터">빅터</a></li>
+		<li><a href="#피터">피터</a></li>
+		<li><a href="#엘리">엘리</a></li>
+		<li><a href="#미아">미아</a></li>
+		<li><a href="#드니스">드니스</a></li>
+		<li><a href="#루시">루시</a></li>
+		<li><a href="#하랑">하랑</a></li>
+		<li><a href="#탄야">탄야</a></li>
+		<li><a href="#멜빈">멜빈</a></li>
+		<li><a href="#헬레나">헬레나</a></li>
+    <li><a href="#론">론</a></li>
+    <li><a href="#엘프리데">엘프리데</a></li>
+    <li><a href="#파수꾼a">파수꾼a</a></li>
+	</ul>
+</nav>
+
+<script>
+	
+function isElementUnderBottom(elem, triggerDiff) {
+  const { top } = elem.getBoundingClientRect();
+  const { innerHeight } = window;
+  return top > innerHeight + (triggerDiff || 0);
+}
+
+function handleScroll() {
+  const elems = document.querySelectorAll('.up-on-scroll');
+  elems.forEach(elem => {
+    if (isElementUnderBottom(elem, -20)) {
+      elem.style.opacity = "0";
+      elem.style.transform = 'translateY(70px)';
+    } else {
+      elem.style.opacity = "1";
+      elem.style.transform = 'translateY(0px)';
+    }
+  })
+}
+
+window.addEventListener('scroll', handleScroll);
+
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+
+</script>
+</body>
+</html>
